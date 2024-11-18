@@ -1,0 +1,250 @@
+libcidad-mesage:[18:04:56.645] [Controller] Controller...1703502296645--3833363645
+libcidad-mesage:[18:04:56.646] Datapool created
+libcidad-mesage:[18:04:56.646] [Controller] Controller...m_param.mrz.usbCamGUID: Integrated Webcam
+libcidad-mesage:[18:04:56.646] [Controller] Controller...setMRZUSBCamGUID: Integrated Webcam
+libcidad-mesage:[18:04:56.646] [Controller] Controller...setFaceregUSBCamGUID: FHD Camera
+libcidad-mesage:[18:04:56.646] [Controller] Controller...set facereg thd to 0.55
+libcidad-mesage:[18:04:56.646] [Controller] Controller...set faceLivenessThd to 0.75
+libcidad-mesage:[18:04:56.646] mrzResource isValid: 1, path: :/data/mrz_fast.traineddata, data size: 1452847, lastModified: Sat Nov 11 09:22:52 2023
+libcidad-mesage:[18:04:56.647] false
+libcidad-mesage:[18:04:56.647] false
+libcidad-mesage:[18:04:56.647] false
+libcidad-mesage:[18:04:56.647] false
+libcidad-mesage:[18:04:56.648] false
+libcidad-mesage:[18:04:56.648] false
+libcidad-mesage:[18:04:56.648] false
+libcidad-mesage:[18:04:56.648] false
+libcidad-mesage:[18:04:56.648] false
+libcidad-mesage:[18:04:56.648] false
+libcidad-mesage:[18:04:56.648] false
+libcidad-mesage:[18:04:56.649] false
+libcidad-mesage:[18:04:56.649] false
+libcidad-mesage:[18:04:56.649] false
+libcidad-mesage:[18:04:56.649] false
+libcidad-mesage:[18:04:56.649] false
+libcidad-mesage:[18:04:56.649] false
+libcidad-mesage:[18:04:56.649] [Controller] Controller...set modelDir to initResourceFiles=C:/Users/ASUS1/AppData/Roaming/cidad
+libcidad-mesage:[18:04:56.649] [Controller] Controller...modelDir=C:/Users/ASUS1/AppData/Roaming/cidad
+libcidad-mesage:[18:04:56.650] Start scanning usb camera device...
+libcidad-mesage:[18:04:56.650] Config mrz camera: Integrated Webcam
+libcidad-mesage:[18:04:56.650] Config face camera: FHD Camera
+libcidad-mesage:[18:04:56.652] Detected camera device name: Integrated Webcam
+libcidad-mesage:[18:04:56.652] Set camera index #0 for MRZ reader, device name: Integrated Webcam
+libcidad-mesage:[18:04:56.652] Detected camera device name: FHD Camera
+libcidad-mesage:[18:04:56.652] Set camera index #1 for face recognizer, device name: FHD Camera
+libcidad-mesage:[18:04:56.652] Detected camera device name: OBS Virtual Camera
+libcidad-mesage:[18:04:56.653] Total video input device found: 3
+libcidad-mesage:[18:04:56.653] [MRZReader] m_enableCroppingImage: 0, roiX: 0, roiY: 0, roiW: 0, roiH: 0
+libcidad-mesage:[18:04:56.662] [FaceRecognizer]...InitFaceRegNCNN...appDataDir=C:/Users/ASUS1/AppData/Roaming/cidad
+libcidad-mesage:[18:04:56.662] [MRZReader] start...captureLoop...thread
+libcidad-mesage:[18:04:56.662] [MRZReader] start...processingLoop...thread
+libcidad-mesage:[18:04:56.662] [MRZReader]...captureLoop...begin
+...modelDir=C:/Users/ASUS1/AppData/Roaming/cidad/faceregncnn
+libcidad-mesage:[18:04:56.662] [MRZReader]...processingLoop...begin...
+libcidad-mesage:[18:04:56.682] [Controller] Controller...instance created
+libcidad-mesage:[18:04:56.683] [Controller] Controller...set facereg thd to 0.55...livenessTHD to 0.75
+libcidad-mesage:[18:04:56.683] [FaceRecognizer] start...captureloop...thread
+libcidad-mesage:[18:04:56.683] [FaceRecognizer] start...proccessingloop...thread
+libcidad-mesage:[18:04:56.683] [FaceRecognizer]...processingLoop...begin...
+libcidad-mesage:[18:04:56.706] [Controller] begin openMRZReader
+libcidad-mesage:[18:04:56.706] [Controller]...end...openMRZReader...ret = 1
+libcidad-mesage:[18:04:56.770] [MRZReader]...captureLoop...OpenCameraRequest
+libcidad-mesage:[18:04:58.080] MRZ camera CAP_PROP_EXPOSURE: -6.000000
+libcidad-mesage:[18:04:58.080] MRZ camera CAP_PROP_AUTO_EXPOSURE: -1.000000
+libcidad-mesage:[18:04:58.083] MRZ camera CAP_PROP_GAIN: 1.000000
+libcidad-mesage:[18:04:58.083] MRZ camera CAP_PROP_FPS: 30.000030
+libcidad-mesage:[18:04:58.083] MRZ camera CAP_PROP_FRAME_WIDTH: 1280.000000
+libcidad-mesage:[18:04:58.083] MRZ camera CAP_PROP_FRAME_HEIGHT: 720.000000
+libcidad-mesage:[18:04:58.083] [MRZReader]...captureLoop...cameraOpenSuccessfully...retry=0
+libcidad-mesage:[18:04:58.083] [MRZReader]...captureLoop...startCapturing...
+libcidad-mesage:[18:04:59.538] [MRZReader] processingLoop ... compareTwoMRZ: failed, currentMRZInfo.doc: 095014743, lastMRZInfo.doc: 
+libcidad-mesage:[18:05:00.051] [MRZReader] processingLoop ... mrzInfo.isValid = true...currentMTZ.userDocNumber: 095014743, exit processingLoop!
+libcidad-mesage:[18:05:00.054] [MRZReader] ReadMRZ ...mrzInfo.userDocNumber = 095014743
+libcidad-mesage:[18:05:00.054] [Controller] readMRZ...documentNumber: 095014743
+libcidad-mesage:[18:05:00.055] [Controller] closeMRZReader
+libcidad-mesage:[18:05:00.193] [MRZReader]...captureLoop...exit...m_openMRZReaderRequested=false
+libcidad-mesage:[18:05:00.294] [MRZReader]...captureLoop...CloseCameraRequest
+libcidad-mesage:[18:05:00.551] [MRZReader]...captureLoop...closeCameraSuccessfully
+libcidad-mesage:[18:05:00.556] [Controller] openFaceDetector...m_facerecognizer->openCamera() time: 0, ret = 1
+libcidad-mesage:[18:05:00.636] [FaceRecognizer]...captureLoop...openCameraRequest...enableCheckLiveness=1
+libcidad-mesage:[18:05:00.636] [FaceRecognizer]...initCameraDevice ...beginOpenUSBCameraDevice
+libcidad-mesage:[18:05:00.732] [FaceRecognizer]...initCameraDevice...end open usb camera device
+libcidad-mesage:[18:05:00.732] [FaceRecognizer] initCameraDevice ...camera device is open
+libcidad-mesage:[18:05:01.462] Face Camera CAP_PROP_EXPOSURE: -1.000000
+libcidad-mesage:[18:05:01.462] Face Camera CAP_PROP_AUTO_EXPOSURE: -1.000000
+libcidad-mesage:[18:05:01.464] Face Camera CAP_PROP_GAIN: -1.000000
+libcidad-mesage:[18:05:01.464] Face Camera CAP_PROP_FPS: 25.000000
+libcidad-mesage:[18:05:01.464] Face Camera CAP_PROP_FRAME_WIDTH: 1920.000000
+libcidad-mesage:[18:05:01.464] Face Camera CAP_PROP_FRAME_HEIGHT: 1080.000000
+libcidad-mesage:[18:05:01.464] [FaceRecognizer]...captureLoop...cameraOpenSuccessfully...retry=0...elapsedMilli=828
+libcidad-mesage:[18:05:01.464] [FaceRecognizer]...captureLoop...startCapturing...
+libcidad-mesage:[18:05:02.752] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=30
+libcidad-mesage:[18:05:03.158] [FaceRecognizer]...SetUserFaceReadchipBase64...begin
+libcidad-mesage:[18:05:03.159] [FaceRecognizer] SetUserFaceReadchipBase64 ... push register photo to queue
+libcidad-mesage:[18:05:03.159] [Controller] RegisterCitizenAuthorizedPhoto...lenght=19484...ret=1
+libcidad-mesage:[18:05:03.286] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=30
+libcidad-mesage:[18:05:03.289] [FaceRecognizer] processingLoop...m_registerFacePhotoQueue is not empty
+libcidad-mesage:[18:05:03.289] [FaceRecognizer]...setUserFaceReadchip...begin
+libcidad-mesage:[18:05:03.289] [FaceRecognizer] setUserFaceReadchip...original size: 300 x 400
+libcidad-mesage:[18:05:03.297] [FaceRecognizer] setUserFaceReadchip...detect_retinaface, size: 300 x 400
+libcidad-mesage:[18:05:03.297] [FaceRecognizer] setUserFaceReadchip...m_warp->Process...begin...
+libcidad-mesage:[18:05:03.297] [FaceRecognizer] setUserFaceReadchip...m_warp->Process...end
+libcidad-mesage:[18:05:03.303] [FaceRecognizer] setUserFaceReadchip...m_arcFace->GetFeature
+libcidad-mesage:[18:05:03.303] [FaceRecognizer] setUserFaceReadchip...OK
+libcidad-mesage:[18:05:03.304] [FaceRecognizer] setUserFaceReadchip...end!!!
+libcidad-mesage:[18:05:03.832] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=26
+libcidad-mesage:[18:05:04.353] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=18
+libcidad-mesage:[18:05:04.880] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=23
+libcidad-mesage:[18:05:05.402] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:05:05.926] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:05:06.457] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:05:06.988] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:05:07.516] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:08.041] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:08.565] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:09.089] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:05:09.618] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:05:10.145] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:10.673] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=23
+libcidad-mesage:[18:05:11.198] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=21
+libcidad-mesage:[18:05:11.721] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:05:12.245] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:12.770] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:05:13.297] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=23
+libcidad-mesage:[18:05:13.826] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:05:14.356] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:14.881] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=21
+libcidad-mesage:[18:05:15.403] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:05:15.928] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=22
+libcidad-mesage:[18:05:16.458] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:05:16.987] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:17.515] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:18.038] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:18.561] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:19.084] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:05:19.607] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:20.133] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:20.667] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=31
+libcidad-mesage:[18:05:21.199] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=26
+libcidad-mesage:[18:05:21.722] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:22.248] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=22
+libcidad-mesage:[18:05:22.772] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:05:23.303] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:05:23.831] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=23
+libcidad-mesage:[18:05:24.358] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=22
+libcidad-mesage:[18:05:24.885] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:25.411] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:25.941] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:05:26.471] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:05:26.999] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=23
+libcidad-mesage:[18:05:27.523] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=22
+libcidad-mesage:[18:05:28.046] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:05:28.574] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:29.103] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:29.632] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:30.162] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:05:30.685] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:05:31.209] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=21
+libcidad-mesage:[18:05:31.735] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=21
+libcidad-mesage:[18:05:32.267] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=26
+libcidad-mesage:[18:05:32.790] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:05:33.316] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=22
+libcidad-mesage:[18:05:33.843] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:34.368] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:05:34.897] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:35.427] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:05:35.953] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=22
+libcidad-mesage:[18:05:36.478] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:37.000] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:05:37.526] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=21
+libcidad-mesage:[18:05:38.050] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:38.580] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=26
+libcidad-mesage:[18:05:39.111] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=27
+libcidad-mesage:[18:05:39.634] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:05:40.158] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=21
+libcidad-mesage:[18:05:40.682] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:41.206] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=21
+libcidad-mesage:[18:05:41.732] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:42.262] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:42.790] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=26
+libcidad-mesage:[18:05:42.849] [FaceRecognizer]...captureLoop...numberCapturedFame=999...avgCaptureTime=7...maxCaptureTime
+libcidad-mesage:[18:05:42.950] [FaceRecognizer]...captureLoop...startCapturing...
+libcidad-mesage:[18:05:43.314] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=21
+libcidad-mesage:[18:05:43.837] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:44.365] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:44.892] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=23
+libcidad-mesage:[18:05:45.425] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=26
+libcidad-mesage:[18:05:45.952] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=23
+libcidad-mesage:[18:05:46.477] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=21
+libcidad-mesage:[18:05:47.000] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:47.526] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=21
+libcidad-mesage:[18:05:48.051] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:48.582] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:49.111] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:49.634] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:50.162] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:05:50.686] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:51.214] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:05:51.744] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=26
+libcidad-mesage:[18:05:52.274] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:05:52.800] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=22
+libcidad-mesage:[18:05:53.323] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:05:53.846] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:54.372] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:05:54.905] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=27
+libcidad-mesage:[18:05:55.434] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:05:55.956] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=18
+libcidad-mesage:[18:05:56.482] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=22
+libcidad-mesage:[18:05:57.007] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=22
+libcidad-mesage:[18:05:57.538] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:05:58.067] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=26
+libcidad-mesage:[18:05:58.594] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=23
+libcidad-mesage:[18:05:59.121] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=23
+libcidad-mesage:[18:05:59.644] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=18
+libcidad-mesage:[18:06:00.167] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:06:00.691] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:06:01.227] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=29
+libcidad-mesage:[18:06:01.758] [FaceRecognizer] checkFaceBluriness...edge mean: 6.850
+libcidad-mesage:[18:06:01.762] [FaceRecognizer] ProcessCVMatFrame...Score: 0.73
+libcidad-mesage:[18:06:01.822] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=91
+libcidad-mesage:[18:06:02.352] [FaceRecognizer] checkFaceBluriness...edge mean: 6.401
+libcidad-mesage:[18:06:02.356] [FaceRecognizer] ProcessCVMatFrame...Score: 0.72
+libcidad-mesage:[18:06:02.413] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=87
+libcidad-mesage:[18:06:02.937] [FaceRecognizer] checkFaceBluriness...edge mean: 8.673
+libcidad-mesage:[18:06:02.941] [FaceRecognizer] ProcessCVMatFrame...Score: 0.64
+libcidad-mesage:[18:06:02.999] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=82
+libcidad-mesage:[18:06:03.525] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:06:04.051] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=22
+libcidad-mesage:[18:06:04.583] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=27
+libcidad-mesage:[18:06:05.116] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=28
+libcidad-mesage:[18:06:05.646] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=26
+libcidad-mesage:[18:06:06.177] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=27
+libcidad-mesage:[18:06:06.706] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:06:07.235] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:06:07.766] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=27
+libcidad-mesage:[18:06:08.292] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=22
+libcidad-mesage:[18:06:08.824] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=27
+libcidad-mesage:[18:06:09.350] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:06:09.882] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:06:10.407] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=21
+libcidad-mesage:[18:06:10.932] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=21
+libcidad-mesage:[18:06:11.456] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:06:11.977] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=18
+libcidad-mesage:[18:06:12.501] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:06:13.033] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=27
+libcidad-mesage:[18:06:13.563] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:06:14.091] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=25
+libcidad-mesage:[18:06:14.616] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=21
+libcidad-mesage:[18:06:15.141] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:06:15.667] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:06:16.192] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=23
+libcidad-mesage:[18:06:16.726] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=27
+libcidad-mesage:[18:06:17.249] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:06:17.777] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:06:18.301] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=20
+libcidad-mesage:[18:06:18.828] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:06:19.358] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=24
+libcidad-mesage:[18:06:19.890] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=26
+libcidad-mesage:[18:06:20.412] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:06:20.934] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=19
+libcidad-mesage:[18:06:21.455] [FaceRecognizer]...processingLoop...ProcessCVMatFrame...elapsedMilli=18
