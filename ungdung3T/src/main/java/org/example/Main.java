@@ -56,8 +56,6 @@ public class Main {
                 app1.setLocationRelativeTo(null);
                 checkConnectInternet();
                 app1.setVisible(true);
-
-
     }
 
 }
