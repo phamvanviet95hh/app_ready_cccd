@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+    <link rel="stylesheet" th:href="@{/css/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <title>Xác thực CCCD</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-4">
+                <div class="logo-gtel">
+                    <img th:src="@{/imgs/gtel-logo-1.png}" width="150" alt="Tổng công ty Công nghệ - Viễn thông Toàn cầu Gtel">
+                </div>
+            </div>
+            <div class="col-12 col-sm-8">
+                <div class="info-user text-right">
+                    <div class="info-user-dateTime d-flex align-items-center box-time-header justify-content-end">
+                        <div>
+                            <span id="dateThu"></span>
+                            <span>,</span>
+                        </div>
+                        <div id="dateTime"></div>
+                        -
+                        <div id="clock">00:00:00</div>
+                    </div>
+                    <div class="info-user-box">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <span>Admin</span>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <h1 class="main-title text-center text-uppercase bold mb-5">
+            <span>
+                Hệ thống xác thực thông tin công dân trong CCCD gắn chíp (eId)
+            </span>
+        </h1>
+        <div class="box-main-content">
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <div class="main-content-left">
+                        <div class="content-img mb-3">
+                            <div class="row">
+                                <div class="col-12 col-sm-8">
+                                    <div class="content-img-avatar">
+                                        <h3>Ảnh chân dung: </h3>
+                                        <img th:src="@{/imgs/img_placeholder_camera.png}" width="100%" height="180" alt="" id="avatar">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="content-img-cccd">
+                                        <h3>Hình chủ thẻ: </h3>
+                                        <img th:src="@{/imgs/img_placeholder.png}" width="95%" height="180" alt="" id="image-cccd">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-info-basic">
+                            <div class="content-info-basic-title mb-3">
+                                <span>Thông tin cơ bản:</span>
+                            </div>
+                            <div class="content-info-basic-content mb-3">
+                                <div class="content-info-box-content">
+                                    <span class="box-content-left">Họ và tên :</span>
+                                    <input type="text" placeholder="" value="" id="full_name">
+                                </div>
+                                <div class="content-info-box-content">
+                                    <span class="box-content-left">Số CCCD :</span>
+                                    <input type="text" placeholder="" value="" id="cccd_number">
+                                </div>
+                                <div class="content-info-box-content">
+                                    <span class="box-content-left">Số CMND :</span>
+                                    <input type="text" placeholder="" value="" id="cmnd_number">
+                                </div>
+                                <div class="content-info-box-content">
+                                    <span class="box-content-left">Ngày sinh :</span>
+                                    <input type="text" placeholder="" value="" id="brith_day">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-info-security">
+                            <div class="content-info-security-title mb-3">
+                                <span>Thông tin bảo mật : </span>
+                            </div>
+                            <div class="content-info-security-box">
+                                <div class="content-info-security-box-content-left">
+                                    <span class="box-content-left">Toàn vẹn dữ liệu :</span>
+                                    <span class="active-security" id="active_au">...</span>
+                                </div>
+                                <div class="content-info-security-box-content-left">
+                                    <span class="box-content-left">Xác thực BCA :</span>
+                                    <span class="active-security" id="verify_bca">...</span>
+                                </div>
+                                <div class="content-info-security-box-content-left">
+                                    <span class="box-content-left">Xác thực khuôn mặt :</span>
+                                    <span class="active-security" id="verify_face">...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-info-action">
+                            <button class="btn btn-danger btn-face-matching">Xác thực khuôn mặt</button>
+                            <button class="btn btn-success ">Xác thực BCA</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-7">
+                    <div class="main-content-right">
+                        <div class="main-content-right-top mb-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="main-content-right-top-divices">
+                                    <span>Thiết bị được kết nối : <b id="info">Chưa kết nối</b></span>
+                                </div>
+                                <div class="main-content-right-top-divices">
+                                    <span>Kết nối mạng : <b id="info-internet">
+                                        <img th:src="@{/imgs/exit21.png}" alt="">Chưa kết nối</b>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-content-right-body mb-3">
+                            <div class="content-info-security-box-content">
+                                <span class="box-content-right">Ngày cấp :</span>
+                                <input type="text" placeholder="" value="" id="issue_date">
+                            </div>
+                            <div class="content-info-security-box-content">
+                                <span class="box-content-right">Giới tính :</span>
+                                <input type="text" placeholder="" value="" id="gender">
+                            </div>
+                            <div class="content-info-security-box-content">
+                                <span class="box-content-right">Hiệu lực :</span>
+                                <input type="text" placeholder="" value="" id="expiry_date">
+                            </div>
+                            <div class="content-info-security-box-content">
+                                <span class="box-content-right">Tôn giáo :</span>
+                                <input type="text" placeholder="" value="" id="religion">
+                            </div>
+                            <div class="content-info-security-box-content">
+                                <span class="box-content-right">Dân tộc :</span>
+                                <input type="text" placeholder="" value="" id="race">
+                            </div>
+                            <div class="content-info-security-box-content">
+                                <span class="box-content-right">Tên bố :</span>
+                                <input type="text" placeholder="" value="" id="father_name">
+                            </div>
+                            <div class="content-info-security-box-content">
+                                <span class="box-content-right">Tên mẹ :</span>
+                                <input type="text" placeholder="" value="" id="mother_name">
+                            </div>
+                            <div class="content-info-security-box-content">
+                                <span class="box-content-right">Vợ/ Chồng :</span>
+                                <input type="text" placeholder="" value="" id="wife_name">
+                            </div>
+                            <div class="content-info-security-box-content">
+                                <span class="box-content-right">ĐĐND :</span>
+                                <input type="text" placeholder="" value="" id="personal_identification">
+                            </div>
+                            <div class="content-info-security-box-content">
+                                <span class="box-content-right">Thường trú :</span>
+                                <input type="text" placeholder="" value="" id="residence_place">
+                            </div>
+                            <div class="content-info-security-box-content">
+                                <span class="box-content-right">Quê quán :</span>
+                                <input type="text" placeholder="" value="" id="origin_place">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="dscert" style="overflow-wrap: break-word;"></div>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <div class="box-camera d-flex align-items-center justify-content-center">
+        <div class="box-camera-content">
+            <div class="box-camera-content-child">
+                <div class="camera-live">
+                    <img id="image">
+                </div>
+                <div class="action-camera">
+                    <button class="btn btn-success btn-chup">Chụp</button>
+                    <button class="btn btn-warning btn-outCamera">Thoát</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script th:src="@{/js/jquery-3.7.1.min.js}"></script>
+    <script th:src="@{/js/socketIo.js}"></script>
+    <script th:src="@{/js/main.js}"></script>
+</footer>
+
+
+</body>
+</html>

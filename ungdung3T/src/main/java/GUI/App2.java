@@ -312,7 +312,7 @@ public class App2 extends javax.swing.JFrame  {
         this.labImg.setIcon(new ImageIcon(getClass().getResource("/img_placeholder.png")));
         this.labekyc.setIcon(new ImageIcon(getClass().getResource("/img_placeholder_camera.png")));
         this.jLabel1.setIcon(new ImageIcon(getClass().getResource("/logo-line-01.png")));
-        URI uri = URI.create("http://192.168.5.1:8000");
+        URI uri = URI.create("https://192.168.5.1:8000");
         IO.Options options = IO.Options.builder().build();
         Socket socket = IO.socket(uri,options);
         socket.on("/event", args1 -> {

@@ -1,0 +1,134 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header{
+    padding: 10px 0px;
+    box-shadow: 18px 2px 13px 0px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+    position: relative;
+}
+.info-user{
+    color: #333;
+}
+.fa-user,
+.fa-caret-down{
+    font-size: 19px;
+}
+.main-title{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.content-info-security-title span,
+.content-info-basic-title span{
+    font-weight: bold;
+}
+main{
+    background-repeat: round;
+    background-image: url(../imgs/nen.png);
+    background-origin: padding-box;
+    padding: 20px;
+}
+.content-info-box-content .box-content-left{
+    width: 21%;
+    display: inline-block;
+}
+.content-info-box-content input{
+    width: 79%;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.content-info-box-content{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-info-security-box-content-left input{
+    margin: 0;
+    font-size: 18px;
+}
+.content-info-security-box-content-left,
+.content-info-security-box-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.content-info-security-box-content .box-content-left{
+    display: inline-block;
+    width: 38%;
+}
+.content-info-action button{
+    padding: 10px 17px;
+    font-size: 0.9em;
+}
+
+.content-info-security-box-content span{
+    width: 17%;
+    display: inline-block;
+}
+.content-info-security-box-content input{
+    width: 82%;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.content-info-security-box-content-left span{
+    width: 38%;
+}
+footer{
+    padding: 50px 0px;
+}
+.content-info-security-box-content-left .active-security{
+    width: 60%;
+}
+.content-img-cccd h3,
+.content-img-avatar h3{
+    font-weight: bold;
+}
+#avatar{
+    cursor: pointer;
+}
+.box-camera-content{
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 7px;
+    width: 500px;
+    height: 450px;
+}
+.box-camera-content-child{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.box-camera{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(27, 30, 33, 0.75);
+    z-index: 999;
+    display: none !important;
+}
+.box-camera-content-child{
+    width: 100%;
+    height: 100%;
+}
+.box-camera.active{
+    display: flex !important;
+}
+.btn{
+    padding: 10px 17px;
+    font-size: 16px;
+}
